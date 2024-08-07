@@ -6,10 +6,13 @@
     <meta name="keywords" content="michael, cv, resume">
     <meta name="description" content="Это сайт - резуме Михаила Шилкина">
     <title>Michael Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="pizza.png" alt="Shilkin Michael" width="200">
-    
+    <div class="container">
+    <div class="info">
+     <img src="pizza.png" alt="Shilkin Michael" class="avatar">
+    <div class="info-text">
     <h1>Шилкин Михаил</h1>
    
     <p>Я основатель и разработчик <strong>канала Pesto-Testo </strong> и онлайн школы <strong>PizzaSchool</strong>
@@ -21,19 +24,24 @@
     
 <a href="https://pastanasolyanke.ru/" target="_blank">Sol</a>
 |
-<a href="http://botteganova.org/" target="_blank">Resto</a> 
+<a href="http://botteganova.org/" target="_blank">Resto</a>
+    </div>
+</div>
 
-<h2>Мои хобби</h2>
+
+<div class="card bg-green">
+    <h2>Мои хобби</h2>
  
-<ol>
+<ol class="list">
     <li>Путешествия</li>
     <li>Плавание</li>
     <li>Дизайн</li>
     <li>Кулинария</li>
 </ol>
-
+</div>
+<div class="card bg-red">
 <h2>Опыт работы</h2>
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>Название</th>
@@ -59,28 +67,34 @@
         </tr>
     </tbody>
    </table>
+   </div>
 
-   <h2>Cвязаться со мной</h2>
+   
 
-   <form action="">
-    <div>
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите имя">
+   <form action="/" class="form">
+    <h2>Cвязаться со мной</h2>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Ваше email:</label>
+            <input type="email" id="eamil" placeholder="Введите email">
+    </div>
+
+    
 </div>
 
-<div>
-    <label for="email">Ваше email:</label>
-    <input type="email" id="eamil" placeholder="Введите email">
-</div>
-
-<div>
+<div class="form-group">
     <label for="message">Ваше сообщение:</label>
-    <br>
     <textarea  id="message" cols="20"
     rows="5" placeholder="Введите сообщение... "></textarea>
 </div>
 
-<input type="submit" value="Отправить!">
+<input class="btn" type="submit" value="Отправить!">
    </form>
 
 
@@ -89,5 +103,6 @@
 <br>
 <br>
 <br>
+</div>
  </body>
  </html>
